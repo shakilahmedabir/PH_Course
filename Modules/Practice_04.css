@@ -1,0 +1,119 @@
+.hero-header {
+  /* Background image setup */
+  background-image: url('Images/header.jfif'); /* Replace with your image URL */
+  background-size: cover;       /* Make image cover entire header */
+  background-position: center;  /* Center the image */
+  background-repeat: no-repeat;
+
+  /* Size and layout */
+  height: 10vh;                 /* 60% of viewport height */
+  min-height: 300px;            /* Minimum height */
+  display: flex;                /* Use flexbox for centering */
+  flex-direction: column;
+  justify-content: center;      /* Vertically center */
+  align-items: center;          /* Horizontally center */
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Responsive text sizes */
+.hero-header h2 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7); /* subtle text glow for readability */
+}
+
+.hero-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  text-shadow: 0 0 6px rgba(0,0,0,0.6);
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+  .hero-header {
+    height: 40vh;
+  }
+  .hero-header h2 {
+    font-size: 2rem;
+  }
+  .hero-header p {
+    font-size: 1rem;
+  }
+}
+ body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #eee;
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #ff4081;
+    margin-bottom: 20px;
+  }
+
+  /* Container for news items */
+  .news-list {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Each news item box */
+  .news-item {
+    background: #1e1e2f;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 64, 129, 0.9); 
+    /* Neon pink shadow */
+    transition: box-shadow 0.3s ease;
+  }
+
+  .news-item:hover {
+    box-shadow: 0 8px 16px #39ff14;
+  }
+
+  /* Titles as block elements */
+  .news-title {
+    display: block; /* block makes it take full width */
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: #ff80ab;
+    text-decoration: underline dashed white;
+  }
+
+  /* Inline author and date */
+  .author, .date {
+    display: inline; /* inline elements flow inside the same line */
+    font-size: 0.9rem;
+    color: #bbb;
+    border-bottom: 1px double #39ff14;
+  }
+
+  /* Inline-block badge for category */
+  .category {
+    display: inline-block; /* behaves like inline but respects width/height */
+    background: #ff4081;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+
+  /* Hidden news item example */
+  .news-item.hidden {
+    display: none; 
+    /* completely removed from layout and invisible */
+  }
+
+  /* Invisible but occupies space */
+  .news-item.invisible {
+    visibility: hidden; 
+    /* hidden but space is reserved */
+  }

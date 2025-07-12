@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML CSS Beginner | Home</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+      <!-- ================= Header ================= -->
+  <header>
+    <h1>HTML &amp; CSS Beginner <span class="neon">Basics</span></h1>
+    <!-- Center Menu -->
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="topics.html">Topics</a>
+      <a href="notes.html">My Notes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- =============== Main Grid ================ -->
+  <main class="grid">
+    <!-- Left: Notebook Notes -->
+    <section class="notes-panel">
+      <h2 class="panel-title">Quick Notes</h2>
+      <textarea placeholder="Write your notes here..."></textarea>
+    </section>
+
+    <!-- Center: Content -->
+    <section class="content">
+      <h2>Welcome 👋</h2>
+      <p>This mini‑site guides you through the <strong>HTML &amp; CSS Beginner Basic Knowledge</strong> series. Explore topics, jot notes, and track your progress using the real‑time dashboard on the right.</p>
+      <button class="next-btn" onclick="window.location='topics.html'">Next Topic ➜</button>
+      <!-- Comment Section -->
+      <div class="comment-box">
+        <h3>Leave a comment</h3>
+        <textarea placeholder="Share your thoughts..."></textarea>
+        <button>Submit</button>
+      </div>
+    </section>
+
+    <!-- Right: Dashboard -->
+    <aside class="dashboard">
+      <h2 class="panel-title">Dashboard</h2>
+      <div id="clock"></div>
+      <div id="date"></div>
+      <hr />
+      <p>Progress: <span id="progress">0%</span></p>
+      <progress id="progress-bar" value="0" max="100"></progress>
+    </aside>
+  </main>
+
+  <!-- =============== Footer =================== -->
+  <footer>
+    <p>© <span id="year"></span> Beginner Basic Knowledge. All rights reserved.</p>
+  </footer>
+</body>
+</html>

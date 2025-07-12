@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Box-Model News Lab</title>
+<style>
+  /* ---------- Theme: quick neon palette ---------- */
+  :root{
+    --pink:#ff0266;
+    --cyan:#00e5ff;
+    --green:#39ff14;
+    --dark:#111;
+    --code: 'Source Code Pro', monospace;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600&display=swap');
+
+  body{
+    background:var(--dark);
+    color:#f8f8f8;
+    font-family:var(--code);
+    margin:0;                 /* reset default margin */
+    padding:2rem;             /* outer breathing room */
+  }
+
+  h1{ 
+    text-align:center; 
+    color:var(--green); 
+    }
+
+  /* ---------- BOX MODEL PLAYGROUND ---------- */
+  .news-box{
+    /* CONTENT area size (only this  sets the base “box”) */
+    width:300px;
+    min-height:120px;
+
+    /* PADDING: space *inside* border, around content  */
+    padding:20px;
+
+    /* BORDER: width | style | color  */
+    border:4px solid var(--cyan);
+
+    /* BORDER‑RADIUS: curve the corners  */
+    border-radius:12px;
+
+    /* MARGIN: pushes the whole box away from siblings
+       demo of FOUR‑value shorthand: TOP RIGHT BOTTOM LEFT */
+    margin:10px 15px 30px 5px;
+
+    background:#1a1a1a;
+    line-height:1.35;
+    transition:.2s;
+  }
+  /* hover just to see outline change */
+  .news-box:hover{
+    border-color:var(--pink);
+    transform:scale(1.025);
+  }
+
+  /* Layout: simple flex wrap for six cards */
+  .wrap{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  a{color:var(--cyan); text-decoration:none;}
+  a:hover{color:var(--pink);}
+</style>
+</head>
+<body>
+
+<h1>CSS Box Model News Lab</h1>
+
+<p style="text-align:center">
+  Inspect these six “cards” to see how <strong>content → padding → border → margin</strong>
+  build up the final size. Try adjusting the <code>padding</code>,
+  <code>border-radius</code> or the four-value <code>margin</code> shorthand in the
+  CSS and refresh.
+</p>
+
+<div class="wrap">
+
+  <!-- 1 -->
+  <article class="news-box">
+    <h3>5 Things to Know Before the Stock Market Opens</h3>
+    <small>Investopedia  -  11 Jul 25</small>
+    <p>Futures dip after a new 35% tariff threat on Canadian imports; Bitcoin jumps past
+       $118k. Levi Strauss and BP also in focus.</p>
+    <a href="https://www.investopedia.com/5-things-to-know-before-the-stock-market-opens-july-11-2025-11770317" target="_blank">
+      Read full story
+    </a>
+  </article>
+
+  <!-- 2 -->
+  <article class="news-box">
+    <h3>Friday Headlines &amp; Weather Round-Up</h3>
+    <small>KBZK / KXLF  -  11 Jul 25</small>
+    <p>Top Montana stories plus National Mojito Day shout-outs and birthday
+       wishes for country icon Minnie Pearl. </p>
+    <a href="https://www.kbzk.com/news/local-news/friday-headlines-july-11-2025" target="_blank">
+      Read full story
+    </a>
+  </article>
+
+  <!-- 3 -->
+  <article class="news-box">
+    <h3>GPB Evening Headlines</h3>
+    <small>GPB News Radio  -  11 Jul 25</small>
+    <p>From politics to public health: the top Georgia developments in Friday’s
+       afternoon bulletin. </p>
+    <a href="https://www.gpb.org/news/2025/07/11/gpb-evening-headlines-for-july-11-2025" target="_blank">
+      Read full story
+    </a>
+  </article>
+
+  <!-- 4 -->
+  <article class="news-box">
+    <h3>Kansas Schools Face $45M Federal Funding Freeze</h3>
+    <small>Kansas Public Radio  -  11 Jul 25</small>
+    <p>Districts scramble after surprise cuts threaten
+       after‑school programs and teacher training. </p>
+    <a href="https://kansaspublicradio.org/daily-headlines/2025-07-11/headlines-for-friday-july-11-2025" target="_blank">
+      Read full story
+    </a>
+  </article>
+
+  <!-- 5 -->
+  <article class="news-box">
+    <h3>Anisimova Shocks Sabalenka, Reaches Wimbledon Final</h3>
+    <small>Yahoo Sports  -  11 Jul 25</small>
+    <p>The unseeded American notches the upset of the tournament to book a spot
+      in Saturday’s championship match. </p>
+    <a href="https://www.yahoo.com/news/top-news-headlines-friday-july-135554030.html" target="_blank">
+      Read full story
+    </a>
+  </article>
+
+  <!-- 6 -->
+  <article class="news-box">
+    <h3>Nikola Jokić Declines Uptake, Eyes Free Agency</h3>
+    <small>Yahoo / Sporting News  -  11 Jul 25</small>
+    <p>The reigning Finals MVP turns down an extension with Denver, fueling
+       speculation of a massive summer move. </p>
+    <a href="https://www.yahoo.com/news/july-11-2025-top-headlines-131200094.html" target="_blank">
+      Read full story
+    </a>
+  </article>
+
+</div>
+
+</body>
+</html>

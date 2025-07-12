@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML CSS Beginner | Topics</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Topic List</h1>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="topics.html" class="active">Topics</a>
+      <a href="notes.html">My Notes</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="grid">
+    <section class="notes-panel">
+      <h2 class="panel-title">Topic Notes</h2>
+      <textarea placeholder="Notes on this topic..."></textarea>
+    </section>
+    <section class="content">
+      <h2>CSS Borders &amp; Margins</h2>
+      <p>We’ll cover <code>border</code>, <code>border-radius</code>, <code>margin</code> (shorthand &amp; longhand) with practical examples.</p>
+      <pre><code class="code">.box {
+  border: 3px solid var(--neon-pink);
+  border-radius: 12px;
+  margin: 2rem;
+}</code></pre>
+      <button class="next-btn" onclick="window.location='notes.html'">Next Topic ➜</button>
+      <div class="comment-box">
+        <h3>Comment</h3>
+        <textarea placeholder="Your feedback..."></textarea>
+        <button>Submit</button>
+      </div>
+    </section>
+    <aside class="dashboard">
+      <h2 class="panel-title">Dashboard</h2>
+      <div id="clock"></div>
+      <div id="date"></div>
+      <hr />
+      <p>Progress: <span id="progress">20%</span></p>
+      <progress id="progress-bar" value="20" max="100"></progress>
+    </aside>
+  </main>
+  <footer>
+    <p>© <span id="year"></span> Beginner Basic Knowledge.</p>
+  </footer>
+</body>
+</html>

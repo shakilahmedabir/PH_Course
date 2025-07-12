@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Selectors</title>
+    <style>
+        p {
+            color: blue;
+        }
+        #forth {
+            font-size: 18px;
+            background-color: aqua;
+
+        }
+        .class1 {
+            background-color: yellow;
+        }
+        .para.bold {
+            font-weight: bold;
+        }
+        .para {
+            font-size: 14px;
+        }
+        * {
+            /* margin: 50px; */
+        }
+        .card.para.bold {
+            background-color: aliceblue;
+            border: 5px solid chartreuse;
+            border-radius: 8px;
+            box-shadow: 0 rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+    <h3>Explore Mixed Selectors</h3>
+    <p class="para class1 bold">My first line CSS</p>
+    <p>My Second line CSS</p>
+    <p>My third line CSS</p>
+    <p class="bold" id="forth">My forth line CSS</p>
+    <p>My sixth line CSS</p>
+    <p>My seven line CSS</p>
+    <p class="card bold">lSelects all elements with a specific class.</p>
+</body>
+</html>
